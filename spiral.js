@@ -6,7 +6,7 @@ let incrementR = 0.2;
 let sep = 4;
 let width, height;
 let shapeSize = 1;
-let shapeIncrement = 1;
+let shapeIncrement = 4;
 
 function degToRad(deg) {
   return (deg * Math.PI) / 180;
@@ -19,7 +19,7 @@ const point = (r, thetaRads) => {
 };
 
 class Circle {
-  constructor(r, thetaDegs, radius = shapeSize, color = "lime") {
+  constructor(r, thetaDegs, radius = r, color = "lime") {
     this.radius = radius;
     this.color = color;
     const thetaRads = degToRad(thetaDegs);
