@@ -19,7 +19,7 @@ const point = (r, thetaRads) => {
 };
 
 class Circle {
-  constructor(r, thetaDegs, radius = r, color = "lime") {
+  constructor(r, thetaDegs, radius = 3, color = "lime") {
     this.radius = radius;
     this.color = color;
     const thetaRads = degToRad(thetaDegs);
